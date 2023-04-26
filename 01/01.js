@@ -100,3 +100,20 @@ console.timeEnd("x");
 // https://leetcode.com/problems/next-greater-element-ii/
 // https://leetcode.com/problems/daily-temperatures/
 // https://leetcode.com/problems/car-fleet/
+
+
+
+
+// Итог
+    //Базовые операции:
+    // =
+    // < >
+    // ++
+    // &&
+    // []
+
+    //O(30KN) = O(KN) - коэффициенты не учитаваются
+
+    //Алгоритмы оцениваются
+        //1 по времени
+        //2 по количеству операций
