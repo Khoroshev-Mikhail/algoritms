@@ -24,16 +24,16 @@ var nextGreaterElements = function(nums) {
     //3.В стэк пушим индексы
     //4.While по условию пока последний элемент индекса в стэке (nums[stack.at(-1)] меньше текущего элемента)
     //5.Do в резалт[последний индекс из стэка] = текущий элемент
-    const res = new Array(nums.length).fill(-1);
+    const result = new Array(nums.length).fill(-1)
     const stack = []
-    for(let i = 0; i < nums.length * 2; i ++){
+    nums.concat(nums).forEach((el, i) => {
         const k = i % nums.length
         while(stack.length > 0 && nums[stack.at(-1)] < nums[k]){
-            res[stack.pop()] = nums[k]
+            result[stack.pop()] = nums[k]
         }
         stack.push(k)
-    }
-    return res
+    })
+    return result
 };
 
 const nums = [1,2,1]
